@@ -77,10 +77,10 @@ public:
 		struct tm * ptm;
 		time ( &rawtime );
 		ptm = gmtime ( &rawtime );
-		//if(ptm->tm_hour == 4 && ptm->tm_min == 55)
-		//{
+		if(ptm->tm_hour == 4 && ptm->tm_min == 55)
+		{
 			mediator_->check(true,this);
-		//}
+		}
 	}
 
 	void action()
@@ -103,10 +103,10 @@ public:
 		struct tm * ptm;
 		time ( &rawtime );
 		ptm = gmtime ( &rawtime );
-		//if(ptm->tm_hour == 4 && ptm->tm_min == 30)
-		//{
+		if(ptm->tm_hour == 4 && ptm->tm_min == 30)
+		{
 			mediator_->check(true,this);
-		//}
+		}
 	}
 
 	void action()
